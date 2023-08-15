@@ -6,10 +6,13 @@
 
 <div class="container_1">
 
-    <h1>画像を選ぼう</h1>
-
-    <img src="{{ image_path }}">
+    <h1>画像を選んでね</h1>
+    <p>
+        「ファイルの選択」をクリックし、フォルダから画像を選択してください。</br>
+        その後、<b>画像を表示</b>をクリックしてください。クリックすると、選択した画像が表示されます。
+    </p>
     
+    <img src="{{ image_path }}">
     <form action="/image", method="post", enctype="multipart/form-data">
         <input type="file" name="input_image">
         <button type="submit">画像を表示</button>
