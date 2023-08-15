@@ -13,6 +13,7 @@ C:\Users\user1\sample1> python -m venv env
 C:\Users\user1\sample1> env\Scripts\activate  
 (env) C:\Users\user1\sample1> python -m pip install -r requirements.txt  
 """"  
+
 仮想環境がアクティブになると、C:\Users\user1\sample1> が (env) C:\Users\user1\sample1>になります。
 
 # first_app
