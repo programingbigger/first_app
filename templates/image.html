@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block style %}{% endblock %}
+
+{% block body %}
+
+<div class="container_1">
+
+    <h1>画像を選ぼう</h1>
+
+    <img src="{{ image_path }}">
+    
+    <form action="/image", method="post", enctype="multipart/form-data">
+        <input type="file" name="input_image">
+        <button type="submit">画像を表示</button>
+    </form>
+    
+    <br>
+    
+    <center>
+        <div class="d-grid gap-2 mx-5" style="width: 1000px;">
+            <a class="btn btn-primary btn-lg" href="{{ url_for("result") }}" role="button">結果</a>
+            <a class="btn btn-secondary btn-lg" href="/" role="button">戻る</a>
+        </div>
+    </center>
+</div>
+
+{% endblock %}

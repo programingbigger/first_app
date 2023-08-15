@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block style %}{% endblock %}
+
+{% block body %}
+<div style="background-color: rgb(215, 219, 219) ;">
+    <h1>homeページ</h1>
+</div>
+
+<div class="container_1">
+    <div class="border border-1" style="width: auto;">
+        <h2>はじめに</h2>
+    </div>
+    <p>　
+        <b>選択した画像を、AIにネコとイヌのどちらの画像かを判定してもらうアプリケーションです。</b>
+        「次へ」を押すと、画像を選択する画面にいきます、遊んでくれると嬉しいです。
+    </p>
+</div>
+
+<div class="container_1">
+    <div class="border border-1" style="width: auto;">
+        <h2>どうやってAIを作ったの？</h2>
+    </div>
+    <p>　
+        <b>転移学習という技術を使って作りました。</b>
+        <b>転移学習は、既にあるAIモデルを使って最後の層をタスクに合う層にすることです。</b>
+        <b>今回のタスクは、ネコとイヌを判別することです。</b>
+    </p>
+</div>
+
+<br>
+
+<center>
+    <div class="d-grid gap-2 mx-5" style="width: 1000px;">
+        <a class="btn btn-primary btn-lg" href="{{ url_for("image") }}" role="button">
+            次へ
+        </a>
+    </div>
+</center>
+
+{% endblock %}

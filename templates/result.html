@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container_1">
+    <div class="border border-1" style="width: auto;">
+        <h2>結果</h2>
+    </div>
+    <img src="{{ result_img }}">
+    <p>{{ result_label }}</p>
+</div>
+
+<div class="container_1">
+    <div class="border border-1" style="width: auto;">
+        <h2>予測の度合い</h2>
+    </div>
+    <img src="{{ result_fig }}" class="img-fluid">
+</div>
+
+<br>
+
+<center>
+    <div class="d-grid gap-2 mx-5" style="width: 1000px;">
+        <a class="btn btn-primary btn-lg" href="{{ url_for("image") }}" role="button">
+            画像の選択まで戻る
+        </a>
+        <a class="btn btn-secondary btn-lg" href="/" role="button">
+            homeへ戻る
+        </a>
+    </div>
+</center>
+
+
+
+{% endblock %}
