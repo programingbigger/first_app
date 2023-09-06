@@ -49,4 +49,4 @@ Press CTRL+C to quit
 Restarting with stat  
 """"  
   
-⓸終了する際は、表示されたブラウザを閉じ、VScodeのターミナル上でCTRL+Cをクリックする。
+⓸終了する際は、表示されたブラウザを閉じ、VScodeのターミナル上でCTRL+Cを実行する。
